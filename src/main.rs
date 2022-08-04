@@ -11,17 +11,12 @@ impl File {
             data: Vec::new(),
         }
     }
-
-    // fn len(&self) -> usize {
-    //   self.data.len()
-    // }
 }
 
 fn main() {
     let f3 = File::new("f3.txt");
 
     let f3_name = &f3.name;
-    //let f3_length = f3.len();
     let f3_length = f3.data.len();
 
     println!("{:?}", f3);
